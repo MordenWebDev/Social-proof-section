@@ -9,7 +9,7 @@ body{
     font-family: 'Spartan', sans-serif;
     line-height: 1.6;
     min-height: 100vh;
-  
+
 
     /* width: 100vh; */
 }
@@ -32,7 +32,7 @@ body{
     background-color: hsl(300,24%,96%);
     border-radius: .5rem;
 
-    
+
 }
 .rating span{
     color:hsl(300,43%,22%); 
@@ -54,7 +54,7 @@ body{
     " one one  one  . . ."
     "  .  two  two  two . . "
     "   .  .   three three three .   "
-    
+
     ;
     gap: 10px;
 align-content: center;
@@ -62,7 +62,7 @@ align-content: center;
 
 /* grid area align whther start end or center */
 .one{
-    
+
 grid-area: one;
 }
 .two{
@@ -74,15 +74,15 @@ grid-area: two;
 
 /* inde the box with content with rating */
 .orange-box{
-   
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 /* it is the heo heading content box  */
 .content-box{
-max-width: 600px;
+max-width: 500px;
 
 }
 /* it contain card persond and verified */
@@ -92,7 +92,7 @@ max-width: 600px;
 }
 .content-heading{
     color: hsl(300,43%,22%);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
 
 }
@@ -108,22 +108,22 @@ max-width: 600px;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-evenly;
-   
-   
+
+
 }
 .c1{
     align-self: flex-start;
-   
+
 }
 
 .c2{
     align-self:  center;
-  
+
 }
 
 .c3{
     align-self: flex-end;
-   
+
 }
 
 /* card defaul style */
@@ -133,7 +133,7 @@ max-width: 600px;
     display: flex;
     margin: 1rem;
     min-height: 300px;
-    min-width: 350px;
+max-width: 350px;
     flex-direction: column;
     border-radius: .5rem;
 }
@@ -171,8 +171,8 @@ span{
 .black-box{
 
    text-align: center;
- 
-   
+
+
   }
   .card-orange{
     justify-content: center;
@@ -185,11 +185,11 @@ span{
   }
   .card{
       justify-content: center;
-     
+
   }
   .rating span {
       display: block;
   }
-  
 
-}
+
+} 
