@@ -1,0 +1,194 @@
+/* //css rest */
+*{
+    box-sizing: border-box;
+}
+/* body default */
+
+body{
+    margin: 0%;
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  
+
+    /* width: 100vh; */
+}
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* it is outer first box i named box because of fun */
+.black-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+}
+/* rating box setting */
+.rating-box .b{
+    color:hsl(300,43%,22%) ;
+    background-color: hsl(300,24%,96%);
+    border-radius: .5rem;
+
+    
+}
+.rating span{
+    color:hsl(300,43%,22%); 
+}
+
+.rating h3{
+    display: inline-block;
+}
+.rating img{
+    margin-right: 5px;
+}
+
+/* rating box style */
+.rating-box{
+    display: grid;
+    grid-template-columns: repeat(auto,150px);
+    grid-template-rows: repeat(auto,50px);
+    grid-template-areas: 
+    " one one  one  . . ."
+    "  .  two  two  two . . "
+    "   .  .   three three three .   "
+    
+    ;
+    gap: 10px;
+align-content: center;
+}
+
+/* grid area align whther start end or center */
+.one{
+    
+grid-area: one;
+}
+.two{
+grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+
+/* inde the box with content with rating */
+.orange-box{
+   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+/* it is the heo heading content box  */
+.content-box{
+max-width: 600px;
+
+}
+/* it contain card persond and verified */
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.content-heading{
+    color: hsl(300,43%,22%);
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+
+.content-heading p{
+    color: hsl(303, 10%, 53%);
+}
+/* it is the cards container */
+
+.card-orange{
+    display: flex;
+    min-height: 400px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+   
+   
+}
+.c1{
+    align-self: flex-start;
+   
+}
+
+.c2{
+    align-self:  center;
+  
+}
+
+.c3{
+    align-self: flex-end;
+   
+}
+
+/* card defaul style */
+.card{
+    background-color:hsl(300,43%,22%); 
+    color: white;
+    display: flex;
+    margin: 1rem;
+    min-height: 300px;
+
+    flex-direction: column;
+    border-radius: .5rem;
+}
+/* image in card */
+
+.image-withinfo{
+display: flex;
+padding: 1rem;
+align-items: center;
+}
+
+.image-withinfo img{
+    height: 50px;
+    width: 50px;
+  margin-right: 1rem;
+    border-radius: 50%;
+}
+.card-para{
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.info h3{
+margin-bottom: 0;
+}
+
+
+/* verified tex color in card */
+span{
+    color: hsl(333, 80%, 67%);
+}
+/* start of media querry */
+/* for devices lower than 870 px */
+@media only screen and (max-width: 870px) {
+.black-box{
+
+   text-align: center;
+ 
+   
+  }
+  .card-orange{
+    justify-content: center;
+  }
+  .rating-box{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+  margin: 0 auto;
+  }
+  .card{
+      justify-content: center;
+     
+  }
+  .rating span {
+      display: block;
+  }
+  
+
+}
