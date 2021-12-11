@@ -107,6 +107,7 @@ max-width: 600px;
     min-height: 400px;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-evenly;
    
    
 }
@@ -132,7 +133,7 @@ max-width: 600px;
     display: flex;
     margin: 1rem;
     min-height: 300px;
-
+    min-width: 350px;
     flex-direction: column;
     border-radius: .5rem;
 }
