@@ -107,7 +107,7 @@ max-width: 500px;
     min-height: 400px;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 
 }
@@ -133,7 +133,7 @@ max-width: 500px;
     display: flex;
     margin: 1rem;
     min-height: 300px;
-max-width: 350px;
+    flex-grow: 1;
     flex-direction: column;
     border-radius: .5rem;
 }
@@ -154,6 +154,7 @@ align-items: center;
 .card-para{
     padding: 1rem;
     max-width: 300px;
+    margin:0 2rem;
 }
 
 .info h3{
